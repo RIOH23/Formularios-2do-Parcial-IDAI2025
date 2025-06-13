@@ -7,6 +7,103 @@
 </head>
 <body>
 
+    <form action="formulario.html" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo" autocomplete="off" required>
+        <br><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <input type="text"readonly value="Derechos reservados">
+        <br><br>
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" disabled>
+        <br><br>
+        <label for="busqueda">Busqueda</label>
+        <input type="search" name="busqueda" id="busqueda">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="correo@dominio.com">
+        <br><br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+        <br><br>
+        <label for="campo de texto">Campo de texto</label>
+        <texttarea>raaa</texttarea>
+        <br><br>
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero">
+        <br><br>
+        <label for="rango">Rango</label>
+        <input type="range" name="rango" id="rango">
+        <br><br>
+        <label for="horas">Horas</label>
+        <input type="time" name="horas" id="horas">
+        <br><br>
+        <label for="fecha y hora">Fecha y hora</label>
+        <input type="datetime-local" name="fecha_hora" id="fecha_hora">
+        <br><br>
+        <label for="mes">Mes</label>
+        <input type="month" name="mes" id="mes">
+        <br><br>
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana">
+        <br><br>
+        <label for="radiobutton">Selecciona una opcion</label>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br><br>
+        <label for="checkbox">Selecciona una opcion</label>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <br><br>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <label for="select opcion">Selecciona una opcion</label>
+        <select name="opcion" id="opcion">
+            <option value="opcion1">Opcion 1</option>
+            <option value="opcion2">Opcion 2</option>
+            <option value="opcion3">Opcion 3</option>
+        </select>
+        <br><br>
+        <label for="select multiple">Selecciona una o varias opciones</label>
+        <select name="opciones" id="opciones" multiple>
+            <option value="opcion1">Opcion 1</option>
+            <option value="opcion2">Opcion 2</option>
+            <option value="opcion3">Opcion 3</option>
+            <option value="opcion4">Opcion 4</option>
+            <option value="opcion5">Opcion 5</option>
+        </select>
+        <br><br>
+        <label for="database">Base de datos</label>
+        <input type="text" name="database" id="database">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+        <from action="avanzado.html">
+        <label for=""> selecciona un archivo</label>
+        <input:file name="foto" id="foto">
+        <br><br>
+        <progress value="50" max="100"> 50% </progress>
+        <br><br>
+        <label for="">envio de datos</label>
+        <input type="submit" value="Enviar">
+        <br><br>
+        <label for="">limpieza de datos</label>
+        <input type="reset" value="Limpiar datos marcados">
+        <br><br>
+        <label for="">boton sin uso</label>
+        <input type="button" value="Boton sin uso">
+    </from>
 
 </body>
 </html>
