@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquila Car</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+
+        }
+
+        table {
+            width: 95%;
+            height: auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin: 20px auto;
+
+            background-color: black;
+            color: white;
+        }
+
+        hr {
+            border: 3px solid white;
+        }
+
+        .hrtable {
+            border: 1px solid white;
+        }
+
+        marquee {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #btn {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            display: block;
+            margin: auto;
+        }
+
+        .contenedor {
+            width: auto;
+            height: auto;
+			float: left;
+			margin: 10px;
+
+			
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			align-items: center;
+        }
+
+        /* .bloque div {
+            display: block;
+        } */
+
+        .enlinea div {
+            display: inline;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <hr>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <img src="img/alquilaCar.png" alt="Alquila Car" style="width: 300px; height: 300px;">
+                <br><br>
+                <marquee>RENTA DE AUTOS DE LUJO</marquee>
+                <p>DATOS DEL CLIENTE</p>
+                <hr class="hrtable">
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                    <br>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" required>
+                    <br>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                    <br>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required>
+                    <br>
+                    <hr class="hrtable">
+                    <label for="fecha">Fecha de Renta</label>
+                    <input type="date" id="fecha" required>
+                    <br>
+                    <label for="numeroDias">Número de Días</label>
+                    <input type="number" id="numeroDias" min="1" required>
+                </form>
+            </td>
+            
+            <div class="contenedor">
+            <td>
+                <p>MARCA DE PREFERENCIA</p>
+                <hr class="hrtable">
+                <input type="radio" id="marca1" name="marca" value="Mercedes-Benz">
+                <label for="marca1">Mercedes-Benz</label><br>
+                <input type="radio" id="marca2" name="marca" value="BMW">
+                <label for="marca2">BMW</label><br>
+                <input type="radio" id="marca3" name="marca" value="Porche">
+                <label for="marca3">Porche</label><br>
+                <input type="radio" id="marca4" name="marca" value="Audi">
+                <label for="marca4">Audi</label><br>
+                <input type="radio" id="marca5" name="marca" value="infiniti">
+                <label for="marca5">Infiniti</label><br>
+                <hr class="hrtable">
+                <article class="enlinea">
+                <div><img src="img/mercedes.png" alt="Mercedes-Benz Logo" style="width: 200px; height: 200px;"></div>
+                <div><img src="img/bmw.png" alt="BMW Logo" style="width: 200px; height: 200px;"></div>
+                <div><img src="img/porsche.png" alt="Porsche Logo" style="width: 200px; height: 200px;"></div>
+                <div><img src="img/audi-logo.png" alt="Audi Logo" style="width: 200px; height: 200px;"></div>
+                <div><img src="img/infiniti.png" alt="Infiniti Logo" style="width: 200px; height: 200px;"></div>
+                </article>
+            </td>
+        </div>
+            
+            <td>
+                <p>MODELO</p>
+                <hr class="hrtable">
+                <input type="radio" id="moedelo1" name="modelo" value="Sedan">
+                <label for="moedelo1">Sedan</label><br>
+                <input type="radio" id="moedelo2" name="modelo" value="Deportivo">
+                <label for="moedelo2">Deportivo</label><br>
+                <input type="radio" id="moedelo3" name="modelo" value="SUV">
+                <label for="moedelo3">SUV</label><br>
+                <input type="radio" id="moedelo4" name="modelo" value="Familiar">
+                <label for="moedelo4">Familiar</label><br>
+                <p>SERVICIOS EXTRA</p>
+                <hr class="hrtable">
+                <p>La renta del auto puede estar acompañado de servicios extras:.</p>
+                <input type="checkbox" id="sevicio1" name="servicio1">
+                <label for="sevicio1">Contratacion de chofer all day</label><br>
+                <input type="checkbox" id="sevicio2" name="servicio2">
+                <label for="sevicio2">Traslado Hotel/Aeropuerto</label><br>
+                <input type="checkbox" id="sevicio3" name="servicio3">
+                <label for="sevicio3">Kilometraje libre</label><br>
+                <input type="checkbox" id="sevicio4" name="servicio4">
+                <label for="sevicio4">Auto electrico</label><br>
+                <input type="checkbox" id="sevicio5" name="servicio5">
+                <label for="sevicio5">Esterilizacion diaria nocturna</label><br>
+                <input type="checkbox" id="sevicio6" name="servicio6">
+                <label for="sevicio6">Internet WiFi In Car</label><br><br>
+                <button type="submit" id="btn">Hacer reservacion</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <footer>
+        <p style="text-align: center; color: white;">
+            Pagina elaborada por: Ricardo Ontiveros<br>
+            <a href="">Liga al Dominio Personal</a><br>
+            &copy; Alquila Car. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>

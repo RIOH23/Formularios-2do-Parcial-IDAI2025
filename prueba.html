@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prubea</title>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            /* Se adapta automáticamente */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .bloque {
+            flex: 1 1 300px;
+            /* Se adapta al ancho disponible */
+            max-width: 400px;
+            /* Evita que crezca demasiado */
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bloque {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="bloque">
+            <img src="img/alquilaCar.png" alt="Alquila Car">
+            <marquee>RENTA DE AUTOS DE LUJO</marquee>
+            <p>DATOS DEL CLIENTE</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" required>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" required>
+            </form>
+        </div>
+
+        <div class="bloque">
+            <p>MARCA DE PREFERENCIA</p>
+            <input type="radio" id="marca1" name="marca" value="Mercedes-Benz">
+            <label for="marca1">Mercedes-Benz</label>
+            <input type="radio" id="marca2" name="marca" value="BMW">
+            <label for="marca2">BMW</label>
+        </div>
+    </div>
+</body>
+
+</html>

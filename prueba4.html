@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquila Car</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            color: white;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Divide en 3 columnas */
+            gap: 20px;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Encabezado */
+        .encabezado {
+            text-align: center;
+            width: 100%;
+        }
+
+        .encabezado img {
+            width: 250px;
+            height: auto;
+        }
+
+        /* Secciones */
+        section {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Opciones de selección */
+        .opciones-marcas,
+        .opciones-modelos,
+        .opciones-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .opciones-marcas label,
+        .opciones-modelos label,
+        .opciones-servicios label {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        /* Logos */
+        .logos-marcas {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logos-marcas img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Botón de reserva */
+        .btn-reservar {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <img src="img/alquilaCar.png" alt="Alquila Car">
+        <marquee>RENTA DE AUTOS DE LUJO</marquee>
+    </header>
+
+    <main class="contenedor">
+        <!-- Sección Datos del Cliente -->
+        <section class="datos-cliente">
+            <h2>Datos del Cliente</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" required>
+
+                <label for="fecha">Fecha de Renta</label>
+                <input type="date" id="fecha" required>
+
+                <label for="numeroDias">Número de Días</label>
+                <input type="number" id="numeroDias" min="1" required>
+            </form>
+        </section>
+
+        <!-- Sección Marcas -->
+        <section class="marca-preferencia">
+            <h2>Marca de Preferencia</h2>
+            <div class="opciones-marcas">
+                <label><input type="radio" name="marca" value="Mercedes-Benz"> Mercedes-Benz</label>
+                <label><input type="radio" name="marca" value="BMW"> BMW</label>
+                <label><input type="radio" name="marca" value="Porsche"> Porsche</label>
+                <label><input type="radio" name="marca" value="Audi"> Audi</label>
+                <label><input type="radio" name="marca" value="Infiniti"> Infiniti</label>
+            </div>
+            <div class="logos-marcas">
+                <img src="img/mercedes.png" alt="Mercedes-Benz">
+                <img src="img/bmw.png" alt="BMW">
+                <img src="img/porsche.png" alt="Porsche">
+                <img src="img/audi-logo.png" alt="Audi">
+                <img src="img/infiniti.png" alt="Infiniti">
+            </div>
+        </section>
+
+        <!-- Sección Modelo -->
+        <section class="modelo-preferencia">
+            <h2>Modelo</h2>
+            <div class="opciones-modelos">
+                <label><input type="radio" name="modelo" value="Sedan"> Sedan</label>
+                <label><input type="radio" name="modelo" value="Deportivo"> Deportivo</label>
+                <label><input type="radio" name="modelo" value="SUV"> SUV</label>
+                <label><input type="radio" name="modelo" value="Familiar"> Familiar</label>
+            </div>
+        </section>
+
+        <!-- Sección Servicios Extra -->
+        <section class="servicios-extra">
+            <h2>Servicios Extra</h2>
+            <div class="opciones-servicios">
+                <label><input type="checkbox" name="servicio1"> Chofer all day</label>
+                <label><input type="checkbox" name="servicio2"> Traslado Hotel/Aeropuerto</label>
+                <label><input type="checkbox" name="servicio3"> Kilometraje libre</label>
+                <label><input type="checkbox" name="servicio4"> Auto eléctrico</label>
+                <label><input type="checkbox" name="servicio5"> Esterilización diaria</label>
+                <label><input type="checkbox" name="servicio6"> Internet WiFi In Car</label>
+            </div>
+            <button type="submit" class="btn-reservar">Hacer reservación</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pagina elaborada por: Ricardo Ontiveros</p>
+        <a href="">Liga al Dominio Personal</a>
+        <p>&copy; Alquila Car. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
